@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Fullscreen Chatbot | BBB Projekt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts und Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chatbot">
+    <header>
+      <h2>Chatbot</h2>
+      <div class="header-buttons">
+        <button id="reset-btn" title="Chat zurücksetzen">
+          <span class="material-symbols-outlined">restart_alt</span>
+        </button>
+        <button id="dark-mode-btn" title="Dark Mode umschalten">
+          <span class="material-symbols-outlined">dark_mode</span>
+        </button>
+      </div>
+    </header>
+    <ul class="chatbox" id="chatbox">
+      <li class="chat incoming">
+        <div class="message">
+          <span class="material-symbols-outlined">smart_toy</span>
+          <p>Hi there 👋<br>Wie kann ich dir heute helfen?</p>
+          <span class="timestamp">10:00 AM</span>
+        </div>
+      </li>
+    </ul>
+    <div class="chat-input">
+      <textarea id="chat-input" placeholder="Nachricht eingeben..." rows="2"></textarea>
+      <button id="send-btn">Senden</button>
+    </div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
